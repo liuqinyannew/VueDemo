@@ -5,9 +5,7 @@ import router from './router/router'
 import './assets/all.css'
 import { Swipe, SwipeItem } from 'vue-swipe';
 import 'vue-swipe/dist/vue-swipe.css'
-import VueAwesomeSwiper from 'vue-awesome-swiper'
-import '../node_modules/swiper/dist/css/swiper.css'
-Vue.use(VueAwesomeSwiper)
+import 'swiper/css/swiper.css'
 //注册轮播图
 Vue.component('swipe', Swipe);
 Vue.component('swipe-item', SwipeItem);
