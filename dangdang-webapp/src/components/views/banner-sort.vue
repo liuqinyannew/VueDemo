@@ -24,21 +24,21 @@
     }
     .slide1 {
         color: #fff;
-        background: url('../../assets/img/1242-366-1572604899.jpg');
+        background: url('../../../public/img/1242-366-1572604899.jpg');
         background-size: 100% 100%;
     }
     .slide2 {
-        background: url('../../assets/img/1242x366-1572504325.jpg');
+        background: url('../../../public/img/1242x366-1572504325.jpg');
         color: #000;
         background-size: 100% 100%;
     }
     .slide3 {
-        background: url('../../assets/img/1242x366_1029-1572580426.jpg');
+        background: url('../../../public/img/1242x366_1029-1572580426.jpg');
         color: #000;
         background-size: 100% 100%;
     }
     .slide4 {
-        background: url('../../assets/img/1900---560-1572577758.jpg');
+        background: url('../../../public/img/1900---560-1572577758.jpg');
         color: #000;
         background-size: 100% 100%;
     }

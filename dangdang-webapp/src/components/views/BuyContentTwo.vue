@@ -14,7 +14,7 @@
         data(){
             return {
                 total:[
-                    {srl:require('../../assets/img/seckill-title.925eac7.png')}
+                    {srl:'./img/seckill-title.925eac7.png'}
                 ]
             }
         }

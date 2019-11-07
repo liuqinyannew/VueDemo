@@ -2,7 +2,7 @@
    <div id="sort-content-right">
        <div id="sort-content">
            <ul>
-               <li v-for="(data,u) in total" :key="u" class="sort-content-li">{{data.content}}</li>
+               <li v-for="(data,u) in book" :key="u" class="sort-content-li">{{data.content}}</li>
            </ul>
        </div>
        <div id="banner">
@@ -12,9 +12,6 @@
            <Sort-read class="con-cen"></Sort-read>
            <Sort-reades class="con-cen"></Sort-reades>
        </div>
-
-
-
    </div>
 </template>
 
@@ -26,34 +23,14 @@
     import SortReades from "./SortReades";
     export default {
         name: "SortContent",
-        data(){
-            return{
-                total:[
-                    {content:'图书'},
-                    {content:'童书'},
-                    {content:'电子书'},
-                    {content:'听书'},
-                    {content:'网络文学'},
-                    {content:'创意工具'},
-                    {content:'旧书/拍卖'},
-                    {content:'女装'},
-                    {content:'男装'},
-                    {content:'男女鞋'},
-                    {content:'童装童鞋'},
-                    {content:'内衣配饰'},
-                    {content:'母婴玩具'},
-                    {content:'食品生鲜'},
-                    {content:'美妆个护'}
-                ]
-            }
-        },
         components:{
             bannerSort,
             SortContents,
             SortContentAll,
             SortRead,
             SortReades
-        }
+        },
+        props:['book']
     }
 </script>
 

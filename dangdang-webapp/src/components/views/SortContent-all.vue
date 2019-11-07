@@ -2,7 +2,7 @@
     <div id="SortContent-all">
     <h3 class="SortContent-all-h1">榜单</h3>
         <div class="SortContent-all-div">
-            <a href="" v-for="(data,u) in total" :key="u" class="SortContent-all-a"><img :src="data.srl" alt=""><br><span>{{data.name}}</span></a>
+            <a href="" v-for="(data,u) in srle" :key="u" class="SortContent-all-a"><img :src="data.srl" alt=""><br><span>{{data.name}}</span></a>
         </div>
     </div>
 </template>
@@ -10,18 +10,7 @@
 <script>
     export default {
         name: "SortContent-all",
-        data(){
-            return{
-                total:[
-                    {srl:require('../../assets/img/new-1572429557.png'),
-                    name:'总榜'},
-                    {srl:require('../../assets/img/tu-1568871813.png'),
-                        name:'新书榜'},
-                    {srl:require('../../assets/img/kid-1565680692.png'),
-                        name:'童书榜'}
-                ]
-            }
-        }
+       props:['srle']
     }
 </script>
 

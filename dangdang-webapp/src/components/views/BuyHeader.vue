@@ -17,22 +17,22 @@
         data(){
             return {
                 total:[
-                    {srl:require('../../assets/img/1.png')}
+                    {srl:'./img/1.png'}
                 ],
                 totals:[
-                    {srl:require('../../assets/img/2.png')}
+                    {srl:'./img/2.png'}
                 ],
                 totales:[
-                    {srl:require('../../assets/img/20180825153505715.png')},
-                    {srl:require('../../assets/img/2018082515383576435.png')},
-                    {srl:require('../../assets/img/2018082515395286917.png')},
-                    {srl:require('../../assets/img/2018083116044590576.png')},
-                    {srl:require('../../assets/img/ddpp-1537350824.png')},
-                    {srl:require('../../assets/img/2018083116363087335.png')},
-                    {srl:require('../../assets/img/2018083116355544875.png')},
-                    {srl:require('../../assets/img/2018083116365438226.png')},
-                    {srl:require('../../assets/img/2018083116373380162.png')},
-                    {srl:require('../../assets/img/coupon-1537505152.png')}
+                    {srl:'./img/20180825153505715.png'},
+                    {srl:'./img/2018082515383576435.png'},
+                    {srl:'./img/2018082515395286917.png'},
+                    {srl:'./img/2018083116044590576.png'},
+                    {srl:'./img/ddpp-1537350824.png'},
+                    {srl:'./img/2018083116363087335.png'},
+                    {srl:'./img/2018083116355544875.png'},
+                    {srl:'./img/2018083116365438226.png'},
+                    {srl:'./img/2018083116373380162.png'},
+                    {srl:'./img/coupon-1537505152.png'}
                 ]
             }
 

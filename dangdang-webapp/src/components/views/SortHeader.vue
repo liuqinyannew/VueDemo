@@ -1,25 +1,15 @@
 <template>
     <div id="sortHeader">
-        <a href="" v-for="(data,u) in totals" :key="u"><img :src="data.srl" alt=""></a>
+        <a href="" v-for="(data,u) in srl2" :key="u"><img :src="data.srl" alt=""></a>
         <input type="text" placeholder="搜索商品/种类/衣服" class="sort-input">
-        <a href="" v-for="(date,u) in total" :key="u"><img :src="date.srl" alt=""></a>
+        <a href="" v-for="(date,u) in srl1" :key="u"><img :src="date.srl" alt=""></a>
     </div>
 </template>
 
 <script>
     export default {
         name: "SortHeader",
-        data(){
-          return {
-              total:[
-                  {srl:require('../../assets/img/1.png')}
-              ],
-              totals:[
-                  {srl:require('../../assets/img/2.png')}
-              ]
-          }
-
-        }
+        props:['srl1','srl2']
     }
 </script>
 
