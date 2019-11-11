@@ -1,7 +1,7 @@
 <template>
 <div>
-    <sort-header :srl1="srl1" :srl2="srl2"></sort-header>
-    <sort-content :book="total" :srle="totals"></sort-content>
+    <sort-header :header1="total" :header2="totals"></sort-header>
+    <sort-content :book="book" :books="books" :img="img"></sort-content>
 </div>
 
 </template>
@@ -17,6 +17,12 @@
         data(){
             return{
                 total:[
+                    {srl:'./img/1.png'}
+                ],
+                totals:[
+                    {srl:'./img/2.png'}
+                ],
+                book:[
                     {content:'图书'},
                     {content:'童书'},
                     {content:'电子书'},
@@ -33,20 +39,61 @@
                     {content:'食品生鲜'},
                     {content:'美妆个护'}
                 ],
-                totals:[
-                    {srl:'./img/new-1572429557.png',
-                        name:'总榜'},
-                    {srl:'./img/tu-1568871813.png',
-                        name:'新书榜'},
-                    {srl:'./img/kid-1565680692.png',
-                        name:'童书榜'}
-                ],
-                srl1:[
-                    {srl:'./img/1.png'}
-                ],
-                srl2:[
-                    {srl:'./img/2.png'}
-                ]
+               books:{
+                   books1:[
+                       {srl:'./img/new-1572429557.png',
+                           name:'总榜'},
+                       {srl:'./img/tu-1568871813.png',
+                           name:'新书榜'},
+                       {srl:'./img/kid-1565680692.png',
+                           name:'童书榜'}
+                   ],
+                   books2:[
+                       {srl:'./img/new-1572429557.png',
+                           name:'总榜'},
+                       {srl:'./img/tu-1568871813.png',
+                           name:'网络文学'},
+                       {srl:'./img/kid-1565680692.png',
+                           name:'创意工具'}
+                   ],
+                   books3:[
+                       {srl:'./img/new-1572429557.png',
+                           name:'总榜'},
+                       {srl:'./img/tu-1568871813.png',
+                           name:'电子书'},
+                       {srl:'./img/kid-1565680692.png',
+                           name:'听书'}
+                   ],
+                   books4:[
+                       {srl:'./img/new-1572429557.png',
+                           name:'总榜'},
+                       {srl:'./img/tu-1568871813.png',
+                           name:'新书榜'},
+                       {srl:'./img/kid-1565680692.png',
+                           name:'童书榜'}
+                   ],
+                   books5:[
+                       {srl:'./img/new-1572429557.png',
+                           name:'总榜'},
+                       {srl:'./img/tu-1568871813.png',
+                           name:'新书榜'},
+                       {srl:'./img/kid-1565680692.png',
+                           name:'童书榜'}
+                   ],
+                   books6:[
+                       {srl:'./img/new-1572429557.png',
+                           name:'总榜'},
+                       {srl:'./img/tu-1568871813.png',
+                           name:'新书榜'},
+                       {srl:'./img/kid-1565680692.png',
+                           name:'童书榜'}
+                   ]
+               },
+                img:{
+                    src:'./img/1242-366-1572604899.jpg',
+                    src1:'./img/1242x366-1572504325.jpg',
+                    src2:'./img/1900---560-1572577758.jpg'
+                }
             }
         }
     }

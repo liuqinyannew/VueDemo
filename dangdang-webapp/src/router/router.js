@@ -6,6 +6,7 @@ import buy from '../components/buy'
 import cart from '../components/cart'
 import sort from '../components/sort'
 import main from '../components/main'
+import search from "../components/views/search";
 Vue.use(VueRouter)
 let router = new VueRouter({
     routes:[
@@ -38,6 +39,10 @@ let router = new VueRouter({
                     component: sort
                 }
             ]
+        },
+        {
+            path:"/search",
+            component:search
         }
     ]
 })

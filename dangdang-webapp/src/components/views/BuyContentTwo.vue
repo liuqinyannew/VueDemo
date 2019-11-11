@@ -2,7 +2,7 @@
     <div id="BuyContentTwo">
        <div class="BuyContentTwo">
            <div id="BuyContentTwo-header">
-               <span></span><span><img :src="data.srl" alt="" v-for="(data,u) in total" :key="u"></span><span>更多 &gt;</span>
+               <span></span><span><img :src="data.srl" alt="" v-for="(data,u) in still" :key="u"></span><span>更多 &gt;</span>
            </div>
        </div>
     </div>
@@ -11,13 +11,7 @@
 <script>
     export default {
         name: "BuyContentTwo",
-        data(){
-            return {
-                total:[
-                    {srl:'./img/seckill-title.925eac7.png'}
-                ]
-            }
-        }
+        props:['still']
     }
 </script>
 

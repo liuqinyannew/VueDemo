@@ -2,7 +2,9 @@
 <div>
     <div id="page-header">
         <a href=""><img src="../../public/img/pageNav.png" alt="" class="pageImg"></a>
-        <div id="page-headera"><Page-header></Page-header></div>
+        <div id="page-headera" @click="search">
+            <Page-header></Page-header>
+        </div>
         <a href=""><img src="../../public/img/pageNav1.png" alt="" class="pageImg"></a>
     </div>
     <div>
@@ -12,11 +14,13 @@
         <img src="../../public/img/86030062844430_y.jpg" alt="" class="pageImgcon">
     </div>
     <div>
-        <page-sort></page-sort>
+        <page-sort :img3="total"></page-sort>
     </div>
-    <div>
-        <Page-content :pageimg1="totals" :pageimg2="product" :pageimg3="totalSort"></Page-content>
+    <div class="page-cont">
+        <Page-content :img1="totals" :img2="product"></Page-content>
+        <buy-swip :img2="product"></buy-swip>
     </div>
+
 </div>
 </template>
 
@@ -25,29 +29,66 @@
     import PageHeader from "./views/PageHeader";
     import pageSort from "./views/pageSort";
     import PageContent from "./views/PageContent";
+    import BuySwip from "./views/BuySwip";
     export default {
         name: "page",
         components:{
             PageHeader,
             banner,
             pageSort,
-            PageContent
+            PageContent,
+            BuySwip
         },
-        data(){
+   data(){
             return{
                 totals:[
                     {src1:'./img/mao_title.jpg'}
                 ],
                 product:[
-                    {src1:'./img/1128804227-1_h_166.jpg'},
-                    {src1:'./img/26439655-1_h_9.jpg'},
-                    {src1:'./img/1545156224-1_h_1.jpg'},
-                    {src1:'./img/23408306-1_h_13.jpg'},
-                    {src1:'./img/1338237909-1_h_2.jpg'},
-                    {src1:'./img/1548863343-1_h_1.jpg'},
-                    {src1:'./img/1551909362-1_h_1.jpg'}
+                    {
+                        src1:'./img/1128804227-1_h_166.jpg',
+                        title:'店内更多低价书籍进店选购！格林...',
+                        price1:'￥0.1',
+                        price2:'￥9.80'
+                    },
+                    {
+                        src1:'./img/26439655-1_h_9.jpg',
+                        title:'店内更多低价书籍进店选购！格林...',
+                        price1:'￥23.8',
+                        price2:'￥120.00'
+                    },
+                    {
+                        src1:'./img/1545156224-1_h_1.jpg',
+                        title:'店内更多低价书籍进店选购！格林...',
+                        price1:'￥9.9',
+                        price2:'￥18.00'
+                    },
+                    {
+                        src1:'./img/23408306-1_h_13.jpg',
+                        title:'店内更多低价书籍进店选购！格林...',
+                        price1:'￥49.9',
+                        price2:'￥699.00'
+                    },
+                    {
+                        src1:'./img/1338237909-1_h_2.jpg',
+                        title:'店内更多低价书籍进店选购！格林...',
+                        price1:'￥9.9',
+                        price2:'￥599.00'
+                    },
+                    {
+                        src1:'./img/1548863343-1_h_1.jpg',
+                        title:'店内更多低价书籍进店选购！格林...',
+                        price1:'￥25.8',
+                        price2:'￥127.00'
+                    },
+                    {
+                        src1:'./img/1551909362-1_h_1.jpg',
+                        title:'店内更多低价书籍进店选购！格林...',
+                        price1:'￥19.9',
+                        price2:'￥179.00'
+                    }
                 ],
-                totalSort:[
+                total:[
                     {
                         src1:'./img/chagnxiao-1562827477.png'
                     },
@@ -80,6 +121,11 @@
                     }
                 ]
             }
+        },
+        methods:{
+            search(){
+                this.$router.push({path:'/search'})
+            }
         }
     }
 </script>
@@ -105,4 +151,7 @@
         width: 3.75rem;
         height: 1.5rem;
     }
+.page-cont{
+    height: 3rem;
+}
 </style>

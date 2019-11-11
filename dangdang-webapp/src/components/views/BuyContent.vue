@@ -4,10 +4,10 @@
             <span></span><span>促销专场</span><span>更多 &gt;</span>
         </div>
         <div class="BuyContent-content">
-            <a href="" v-for="(data,u) in total" :key="u"><span>{{data.name1}}</span><br><span>{{data.name2}}</span><br><img :src="data.srl" alt=""></a>
+            <a href="" v-for="(data,u) in book1" :key="u+'u'"><span>{{data.name1}}</span><br><span>{{data.name2}}</span><br><img :src="data.srl" alt=""></a>
         </div>
         <div class="BuyContent-content Buy-a">
-            <a href="" v-for="(data,u) in totals" :key="u"><span></span><span>{{data.name2}}</span><br><span></span><img :src="data.srl" alt=""></a>
+            <a href="" v-for="(data,u) in book2" :key="u"><span></span><span>{{data.name2}}</span><br><span></span><img :src="data.srl" alt=""></a>
         </div>
 
     </div>
@@ -16,41 +16,7 @@
 <script>
     export default {
         name: "BuyContent",
-        data(){
-            return{
-                total:[
-                    {
-                        name1:'教辅',
-                        name2:'每满79减30',
-                        srl:'./img/25257593-1_b_8.jpg'
-                    },
-                    {
-                        name1:'教辅',
-                        name2:'每满100减50',
-                        srl:'./img/25257593-1_b_8.jpg'
-                    },
-                    {
-                        name1:'教辅',
-                        name2:'每满30减15',
-                        srl:'./img/1901134143-1_b_1.jpg'
-                    }
-                ],
-                totals:[
-                    {
-                        name2:'11月49元5件',
-                        srl:'./img/25536856-1_b_3.jpg'
-                    },
-                    {
-                        name2:'美斯特邦威联合超品',
-                        srl:'./img/1174645489-1_b_1.jpg'
-                    },
-                    {
-                        name2:'一件4.5折',
-                        srl:'./img/1508151414-1_b_1.jpg'
-                    }
-                ]
-            }
-        }
+       props:['book1','book2']
     }
 </script>
 
@@ -58,7 +24,7 @@
     #BuyContent{
         width: 3.75rem;
         height: 3.3rem;
-        background-color: gainsboro;
+        background-color: rgb(242,242,242);
     }
     #BuyContent-header{
         width: 3.5rem;

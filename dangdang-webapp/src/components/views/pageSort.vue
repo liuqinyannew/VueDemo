@@ -1,13 +1,13 @@
 <template>
     <div id="pageSort">
-        <a href="" v-for="(data,u) in pageimg3" :key="u"><img :src="data.src1" alt="" class="pageimgsize"></a>
+        <a href="" v-for="(data,u) in img3" :key="u"><img :src="data.src1" alt="" class="pageimgsize"></a>
     </div>
 </template>
 
 <script>
     export default {
         name: "pageSort",
-        props:['pageimg3']
+        props:['img3']
     }
 </script>
 

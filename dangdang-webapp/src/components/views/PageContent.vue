@@ -1,18 +1,18 @@
 <template>
     <div>
         <div id="ContentImg">
-            <a href="" v-for="(data,u) in pageimg1" :key="u"><img :src="data.src1" alt="" class="ContentImg"></a>
+            <a href="" v-for="(data,u) in img1" :key="u"><img :src="data.src1" alt="" class="ContentImg"></a>
         </div>
-        <div id="contentA">
-            <a href="" v-for="(data,u) in pageing2" :key="u"><img :src="data.src1" alt="" class="contentA"><br><span></span><br><span></span><br><span><del></del></span></a>
-        </div>
+<!--        <div id="contentA">-->
+<!--            <a href="" v-for="(data,u) in img2" :key="u"><img :src="data.src1" alt="" class="contentA"><br><span></span><br><span></span><br><span><del></del></span></a>-->
+<!--        </div>-->
     </div>
 </template>
 
 <script>
     export default {
         name: "PageContent",
-        props:['pageimg1','pageing2']
+        props:['img1','img2']
     }
 </script>
 

@@ -2,7 +2,7 @@
     <div id="SortContent-all">
     <h3 class="SortContent-all-h1">榜单</h3>
         <div class="SortContent-all-div">
-            <a href="" v-for="(data,u) in srle" :key="u" class="SortContent-all-a"><img :src="data.srl" alt=""><br><span>{{data.name}}</span></a>
+            <a href="" v-for="(data,u) in books" :key="u" class="SortContent-all-a"><img :src="data.srl" alt=""><br><span>{{data.name}}</span></a>
         </div>
     </div>
 </template>
@@ -10,7 +10,7 @@
 <script>
     export default {
         name: "SortContent-all",
-       props:['srle']
+       props:['books']
     }
 </script>
 

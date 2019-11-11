@@ -1,15 +1,15 @@
 <template>
     <div id="sortHeader">
-        <a href="" v-for="(data,u) in srl2" :key="u"><img :src="data.srl" alt=""></a>
+        <a href="" v-for="(data,u) in header2" :key="u+'index'"><img :src="data.srl" alt=""></a>
         <input type="text" placeholder="搜索商品/种类/衣服" class="sort-input">
-        <a href="" v-for="(date,u) in srl1" :key="u"><img :src="date.srl" alt=""></a>
+        <a href="" v-for="(date,u) in header1" :key="u"><img :src="date.srl" alt=""></a>
     </div>
 </template>
 
 <script>
     export default {
         name: "SortHeader",
-        props:['srl1','srl2']
+      props:['header1','header2']
     }
 </script>
 
@@ -31,6 +31,6 @@
         border: 0.01rem solid gainsboro;
         border-radius: 0.5rem;
         text-align: center;
-        background-color: gainsboro;
+        background-color: rgb(242,242,242);
     }
 </style>
