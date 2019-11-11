@@ -32,5 +32,6 @@
         border-radius: 0.5rem;
         text-align: center;
         background-color: rgb(242,242,242);
+        margin-top: 0.05rem;
     }
 </style>

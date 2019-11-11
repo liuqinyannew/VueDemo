@@ -1,10 +1,11 @@
 <template>
    <div id="sort-content-right">
        <div id="sort-content">
-           <ul>
-               <li v-for="(data,u) in book" :key="u" class="sort-content-li" @click.prevent="click1(u)" :class="index==u?'red':'normal'">{{data.content}}</li>
-           </ul>
-
+           <div id="flex">
+               <ul>
+                   <li v-for="(data,u) in book" :key="u" class="sort-content-li" @click.prevent="click1(u)" :class="index==u?'red':'normal'">{{data.content}}</li>
+               </ul>
+           </div>
        </div>
        <sort-right :books="books.books1" :img="img" v-if="flage==0"></sort-right>
        <sort-right :books="books.books2" :img="img" v-if="flage==1"></sort-right>
@@ -49,12 +50,17 @@
     }
 #sort-content{
     width: 0.8rem;
-
+}
+#flex{
+    position: fixed;
+    top: 0.4rem;
 }
     .sort-content-li{
+        width: 0.8rem;
         height: 0.45rem;
         line-height: 0.45rem;
         background-color: white;
+
     }
     .red {
         color: #d81e06;

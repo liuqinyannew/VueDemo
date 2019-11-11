@@ -1,12 +1,17 @@
 <template>
     <div id="main-nav">
-        <span>登陆/注册</span>
+        <span @click="land">登陆/注册</span>
     </div>
 </template>
 
 <script>
     export default {
-        name: "mainContentNav"
+        name: "mainContentNav",
+        methods:{
+            land(){
+                this.$router.push({path:'/land'})
+            }
+        }
     }
 </script>
 

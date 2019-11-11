@@ -1,7 +1,9 @@
 <template>
 <div>
-    <sort-header :header1="total" :header2="totals"></sort-header>
-    <sort-content :book="book" :books="books" :img="img"></sort-content>
+    <div id="flex">
+        <sort-header :header1="total" :header2="totals"></sort-header>
+    </div>
+    <sort-content :book="book" :books="books" :img="img" class="magin"></sort-content>
 </div>
 
 </template>
@@ -100,5 +102,12 @@
 </script>
 
 <style scoped>
-
+#flex{
+    position: fixed;
+    top: -0.05rem;
+    z-index: 3;
+}
+    .magin{
+        margin-top: 0.4rem;
+    }
 </style>
